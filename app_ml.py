@@ -33,13 +33,15 @@ def run_app_ml() :
         y_pred = regressor.predict(new_data)
         print(y_pred)
 
-
-        price = round(y_pred[0])
-
+        if y_pred <= 0 :
+            st.text('예측이 불가능합니다.')
+        else :
+            price = round(abs(y_pred[0]))
+            st.text(f'{price}달러짜리 차량 구매 가능합니다.')
         # print(str(price)+'달러짜리 차량 구매 가능합니다.')
         # print(f'{price}달러짜리 차량 구매 가능합니다.')
         # print('{}달러짜리 차량 구매 가능합니다.'.format(price))
 
         
-        st.text(f'{price}달러짜리 차량 구매 가능합니다.')
+            
         # 버튼을 누르면 예측한 금액을 표시한다
