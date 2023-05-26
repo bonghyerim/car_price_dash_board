@@ -19,7 +19,7 @@ def run_app_ml() :
         gender = 1
 
     age = st.number_input('나이 입력',18, 100)
-    salary = st.number_input('연봉 입력', 5000, 100000)
+    salary = st.number_input('연봉 입력', 2000, 100000)
     dept = st.number_input('카드 빚', 0, 1000000)
     worth = st.number_input('자산입력', 1000, 10000)
 
