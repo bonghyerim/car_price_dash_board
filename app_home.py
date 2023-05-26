@@ -2,7 +2,7 @@ import streamlit as st
 
 def run_app_home():
     
-    st.subheader('이재은 바보')
+    st.subheader('안녕하세요!')
     st.markdown('좋은 서비스로 제공하겠습니다.')
 
     st.markdown('이 앱은 고객 데이터의 자동차 구매 데이터에 대한 내용입니다.')
